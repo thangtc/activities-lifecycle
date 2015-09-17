@@ -1,7 +1,11 @@
-# activities-lifecycle
-Manage activities lifecycle in a application
+# Activities lifecycle
+Manage activities lifecycle in an application
 
-# 1. Requirement
-- Min sdk for android level 14
+# Requirement
+Min sdk level 14
 
-# 2. How to use
+# How to use
+Just use the following code to know the application is foreground or background
+```java
+    ((AppController) getApplicationContext()).isForeground();
+```
