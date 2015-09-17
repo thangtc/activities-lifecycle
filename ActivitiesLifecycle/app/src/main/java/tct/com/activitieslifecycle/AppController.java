@@ -37,6 +37,7 @@ public class AppController extends Application {
         public void onActivityStarted(Activity activity) {
             if (++numRunningActivity >= 1) {
                 appStatus = AppStatus.FOREGROUND;
+                // Implement your code here if you want do something only in foreground status.
             }
         }
 
@@ -52,6 +53,7 @@ public class AppController extends Application {
         public void onActivityStopped(Activity activity) {
             if (--numRunningActivity == 0) {
                 appStatus = AppStatus.BACKGROUND;
+                // Stop or cancel something in your app, when app in background.
             }
         }
 
